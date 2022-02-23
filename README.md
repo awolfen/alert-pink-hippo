@@ -1,5 +1,5 @@
 ### TODO:
-- fix height responsivness
+- assess assumptions and limitations
 
 ### Instructions:
 
@@ -32,5 +32,4 @@ Extension:
 - You should make it easy to switch between the active question
 
 ### Assumptions, limitations:
-- height responsivness
 
