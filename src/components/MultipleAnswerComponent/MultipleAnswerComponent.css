@@ -1,0 +1,114 @@
+.MultipleAnswerComponent {
+    margin: auto;
+
+    width: 66%;
+    height: 80px;
+    border: 2px solid #F9D29F;
+    border-radius: 100px;
+    box-sizing: border-box;
+
+    display: flex;
+    justify-content: space-around;
+
+    font-size: 24px;
+}
+
+.Highlighter {
+    position: absolute;
+    border-radius: 100px;
+
+    background-color: white;
+    opacity: 50%;
+
+    transition: 300ms ease-out;
+}
+
+.initial {
+    display: none;
+}
+
+.DHigh {
+    width: 29.5vw;
+}
+
+.DPos0 {
+    left: 15.4vw;
+}
+
+.DPos1 {
+    left: 45.2vw;
+}
+
+.THigh {
+    width: 19.7vw;
+}
+
+.TPos0 {
+    left: 15.4vw;
+}
+
+.TPos1 {
+    left: 35.2vw;
+}
+
+.TPos2 {
+    left: 55vw;
+}
+
+@media only screen and (max-width: 768px) {
+    .MultipleAnswerComponent {
+        font-size: 2.5vw;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .Highlighter {
+        overflow: hidden;
+    }
+
+    .MultipleAnswerComponent {
+        position: relative;
+        flex-direction: column;
+        /* overflow proprety not working */
+        overflow: hidden;
+        min-width: 0px;
+        min-height: 0px;
+    }
+
+    .DHigh, .THigh {
+        width: 59vw;
+    }
+
+    .DHigh {
+        height: 3.1vh !important;
+    }
+
+    .THigh {
+        height: 2.1vh !important;
+    }
+
+    .DPos0 {
+        left: -0.2vw;
+        transform: translate(0px, -20px);
+    }
+
+    .DPos1 {
+        left: -0.2vw;
+        transform: translate(0px, 20px);
+    }
+
+    .TPos0 {
+        left: -0.2vw;
+        transform: translate(0px, -27px);
+    }
+
+    .TPos1 {
+        left: -0.2vw;
+        transform: translate(0px, 0px);
+    }
+
+    .TPos2 {
+        left: -0.2vw;
+        transform: translate(0px, 27px);
+    }
+}
