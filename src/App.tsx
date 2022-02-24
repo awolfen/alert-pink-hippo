@@ -1,6 +1,6 @@
 import { useState } from "react";
-import "./App.css";
 import QuestionComponent from "./components/QuestionComponent/QuestionComponent";
+import "./App.css";
 
 const DUMMY_DATA = {
   id: 123,
@@ -9,7 +9,7 @@ const DUMMY_DATA = {
     [
       { text: "Cell Wall", valid: false },
       { text: "Ribosomes", valid: true },
-      { text: "Plants", valid: true },
+      { text: "Flagellum", valid: false },
     ],
     [
       { text: "Cytoplasm", valid: true },

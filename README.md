@@ -1,6 +1,3 @@
-### TODO:
-- assess assumptions and limitations
-
 ### Instructions:
 
 - git clone https://github.com/awolfen/alert-pink-hippo.git
@@ -32,4 +29,10 @@ Extension:
 - You should make it easy to switch between the active question
 
 ### Assumptions, limitations:
+- only works with questions with 2-3 answers
+- animations written with vanilla js/css, could be improved with certain libraries (e.g. React Transition Group Library)
+- state currently stored in a mix of local state and redux, depending on context could favor on or the other for continuity
+- no unit tests, next step might be to write tests to a specification and then refactor to be consistent with the project with which to integrate
 
+- there may be a fourth background color to be included, but I could not find it on the figma page and it seems trivial to implement so I'll leave it with 3
+- on that note the css is not a 100% match to the figma page, I could spend some more time tweaking values but I'm not sure if that is the goal of this execise

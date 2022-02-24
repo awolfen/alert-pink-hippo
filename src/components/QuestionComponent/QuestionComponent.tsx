@@ -21,6 +21,7 @@ const QuestionComponent: React.FC<{
   const [allValid, setAllValid] = useState<Boolean[]>([]);
   const [shuffledAnswerList, setShuffledAnswerList] = useState<answer[][]>([]);
 
+  //function to dispatch answer validity to store state
   const setAnswerValidity = (i: number, validity: boolean) => {
     let emptyArr = allValid;
     emptyArr[i] = validity;
@@ -29,6 +30,7 @@ const QuestionComponent: React.FC<{
     dispatch(counterActions.setCounter(correct));
   };
 
+  //sets max answers to store state, also resets correct answers in case of question switch
   useEffect(() => {
     let emptyArr: boolean[] = [];
     for (let i = 0; i < answerList.length; i++) {
@@ -39,6 +41,7 @@ const QuestionComponent: React.FC<{
     dispatch(counterActions.setCounter(0));
   }, [dispatch, answerList]);
 
+  //shuffles answer list to randomize answer order
   useEffect(() => {
     setShuffledAnswerList(shuffle(answerList));
   }, [answerList]);
